@@ -1,0 +1,321 @@
+
+<html>
+    <head>
+        <title>Registration For Donation</title>
+
+        <style type="text/css">
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                background-image:url(CSSFiles/Images/donate.jpg);
+                background-position:center;
+                background-size:cover;
+                font-family:sans-serif;
+                margin-top:40px;
+            }
+            .regform{
+                width:800px;
+                background-color:rgb(0,0,0,0.6);
+                margin:auto;
+                color:#FFFFFF;
+                padding:10px 0px 10px 0px;
+                text-align:center;
+                border-radius:15px 15px 0px 0px;
+            }
+            .main{
+                background-color:rgb(0,0,0,0.5);
+                width:800px;
+                margin:auto;
+            }
+            form{
+                padding:10px;
+            }
+            #name{
+                width:100%;
+                height:100px;
+            }
+            .name{
+                margin-left:25px;
+                margin-top:30px;
+                width:125px;
+                color:white;
+                font-size:20px;
+                font-weight:700;
+            }
+            .fname{
+                position:relative;
+                left:130px;
+                top:-37px;
+                line-height:40px;
+                border-radius:6px;
+                padding:0 22px;
+                font-size:16px;
+            }
+            .lname{
+                position:relative;
+                left:360px;
+                top:-80px;
+                line-height:40px;
+                border-radius:6px;
+                padding:0 27px;
+                font-size:16px;
+                color:#555;
+            }
+            .flabel{
+                position:relative;
+                color:#E5E5E5;
+                text-transform:capitalize;
+                font-size:14px;
+                left:133px;
+                top:-45px;
+            }
+            .llabel{
+                position:relative;
+                color:#E5E5E5;
+                text-transform:capitalize;
+                font-size:14px;
+                left:55px;
+                top:-45px;
+            }
+            .email{
+                position:relative;
+                left:200px;
+                top:-37px;
+                line-height:40px;
+                width:485px;
+                border-radius:6px;
+                padding:0 22px;
+                font-size:16px;
+                color:#555; 
+            }
+            .code{
+                position:relative;
+                left:200px;
+                top:-37px;
+                line-height:40px;
+                width:95px;
+                border-radius:6px;
+                padding:0 22px;
+                font-size:16px;
+                color:#555;
+            }
+            .number{
+                position:relative;
+                left:200px;
+                top:-37px;
+                line-height:40px;
+                width:260px;
+                border-radius:6px;
+                padding:0 22px;
+                font-size:16px;
+                color:#555;
+            }
+            .area-code{
+                position:relative;
+                color:#E5E5E5;
+                text-transform:capitalize;
+                font-size:14px;
+                left:105px;
+                top:-4px;
+            }
+            .phone-number{
+                position:relative;
+                color:#E5E5E5;
+                text-transform:capitalize;
+                font-size:14px;
+                left:-60px;
+                top:-4px;
+            }
+            .op{
+                position:relative;
+                left:200px;
+                top:-37px;
+                line-height:40px;
+                width:532px;
+                height:40px;
+                border-radius:6px;
+                padding:0 22px;
+                font-size:16px;
+                color:#555;
+                outline:none;
+                overflow:hidden;
+            }
+            .op op{
+                font-size:20px;
+            }
+            button{
+                background-color:#3BAF9F;
+                display:block;
+                margin:0 auto;
+                text-align:center;
+                border-radius:12px;
+                border:2px solid #366473;
+                padding:14px 110px;
+                color:white;
+                cursor:pointer;
+                transition:0.25px;
+                font-size:x-large;
+            }
+            button:hover{
+                background-color:#f5c951;
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <div class="regform"><h1>Registration Form</h1></div>
+
+        <div class="main">
+    <!--Form-->
+            <form action="after_registration.html">
+                
+            <div id="name">
+
+                <h2 class="name">Name</h2>
+                <input class="fname" type="text" name="first_name" placeholder="Enter First Name">
+                <br>
+                <label class="flabel">First Name</label>
+                <input class="lname" type="text" name="first_name" placeholder="Enter Last Name">
+                <label class="llabel">Last Name</label>
+
+            </div>
+                
+                <h2 class="name" >Email</h2>
+                <input class="email" type="text" name="email" placeholder="Enter Email">
+
+                <h2 class="name">Phone</h2>
+                <input class="code" type="text" name="area_code">
+                <label class="area-code">Area code</label>
+                <input class="number" type="text" name="phone">
+                <label class="phone-number">Phone Number</label>
+
+                <h2 class="name">Category</h2>
+                <select class="op" name="Category">
+                    <option disabled="disabled" selected="selected">--Choose Category--</option>
+                    <option>Food</option>
+                    <option>Clothes</option>
+                    <option>Education</option>
+                    <option>Clean Water</option>
+                    <option>Female Empowerment</option>
+                    <option>Climate Action</option>
+                    <option>Save children</option>
+                    <option>Old Age Help</option>
+                    <option>Sanitation Facilities</option>
+                    <option>Animal Welfare</option>
+                </select>
+
+                <h2 class="name">Select NGO:</h2>
+
+            <!--1st-->
+                <h2 class="name">Food:</h2>
+                <select class="op" name="Select NGO">
+                    <option disabled="disabled" selected="selected">Choose NGO For Food</option>
+                    <option>MANAV KARTAVYA NGO</option>
+                    <option>Jan Sdhna Trust</option>
+                    <option>Shree Vasuki Charitable Trust</option>
+                    <option>Help All Charitable Trust</option>
+                    <option>St Xaviers Social Service Society</option>
+                    <option>MoDe India</option>
+                    <option>Shree Sainath Social Society</option>
+                    <option>Anna Samagri Yojna</option>
+                </select>
+
+            <!--2nd-->
+                <h2 class="name">Clothes:</h2>
+                <select class="op" name="Select NGO">
+                    <option disabled="disabled" selected="selected">Choose NGO For Clothes</option>
+                    <option>Manav Kartavya NGO</option>
+                    <option>Sath charitable trust</option>
+                    <option>Samvedna trust</option>
+                    <option>Hope foundation</option>
+                </select>
+
+            <!--3rd-->
+                <h2 class="name">Education:</h2>
+                <select class="op" name="Select NGO">
+                    <option disabled="disabled" selected="selected">Choose NGO For Education</option>
+                    <option>Bhoomi Education And Charitable Trust</option>
+                    <option>Bn Education And Cheritable Trust</option> 
+                    <option>Teach For India</option>
+                    <option>Institute for Development Education and Learning (IDEAL)</option>
+                </select>
+
+            <!--4th-->
+                <h2 class="name">Clean Water:</h2>
+                <select class="op" name="Select NGO">
+                    <option disabled="disabled" selected="selected">Choose NGO For Clean Water</option>
+                    <option>MANAV KARTAVYA NGO</option>
+                    <option>Jan Sdhna Trust</option>
+                    <option>Shree Vasuki Charitable Trust</option>
+                </select>
+
+            <!--5th-->
+                <h2 class="name">Female Empowerment:</h2>
+                <select class="op" name="Select NGO">
+                    <option disabled="disabled" selected="selected">Choose NGO For Female Empowerment</option>
+                    <option> Brahmhani Mahila Seva Trust</option>
+                    <option>Jan Sadhna Trust</option>
+                    <option>Shanti Niketan Samiti</option>
+                    <option>Mandvi ni pole seva sungh</option>
+                    <option>Asha kiran trust</option>
+                </select>
+
+            <!--6th-->
+                <h2 class="name">Climate Action:</h2>
+                <select class="op" name="Select NGO">
+                    <option disabled="disabled" selected="selected">Choose NGO For Climate Action</option>
+                    <option>Catch Foundation : NGO Working For Environment Protection</option>
+                    <option>Centre for Climate Change and Clean Development Initiatives</option>
+                    <option>PARYAVARAN MITRA</option>
+                </select>
+
+            <!--7th-->
+                <h2 class="name">Save Children:</h2>
+                <select class="op" name="Select NGO">
+                    <option disabled="disabled" selected="selected">Choose NGO For Save Children</option>
+                    <option>Tara foundation</option>
+                    <option> Aasmaan fondation</option>
+                    <option> Visamo kids</option>
+                    <option> AWAG</option>
+                </select>
+
+            <!--8th-->
+                <h2 class="name">Old Age Help:</h2>
+                <select class="op" name="Select NGO">
+                    <option disabled="disabled" selected="selected">Choose NGO For Old Age Help</option>
+                    <option>Matoshree Vrudhashram</option>
+                    <option>Krishna dham old age home</option>
+                    <option>Jeevan Sandhya Old age home</option>
+                    <option>Tirthangan visamo gardaghar</option>
+                    <option>Jivandhara vrudhashram</option>
+                    <option>Vadilo ni duniya(Old age home)</option>
+                </select>
+
+            <!--9th-->
+                <h2 class="name">Sanitation Facilities:</h2>
+                <select class="op" name="Select NGO">
+                    <option disabled="disabled" selected="selected">Choose NGO For Sanitation Facilities</option>
+                    <option>National Sanitation and Environment Improvment Foundation</option>
+                    <option>Environmental Sanitation Institute, Sughad</option>
+                </select>
+
+            <!--10th-->
+                <h2 class="name">Animal Welfare:</h2>
+                <select class="op" name="Select NGO">
+                    <option disabled="disabled" selected="selected">Choose NGO For Life on Land</option>
+                    <option>Animal Care Charitable Trust</option>
+                    <option>Namrata katyarmal</option>
+                    <option>Goal Foundation</option>
+                    <option>Agam Foundation</option>
+                </select>
+        
+                <button type="submit">Register</button>
+        </form>
+        </div>
+
+    </body>
+
+</html>
